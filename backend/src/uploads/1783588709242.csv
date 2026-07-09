@@ -1,0 +1,16 @@
+Name,Age,Email,Glucose,Haemoglobin,Cholesterol,Status,AI Remark
+Madison XI ,27,madison@hotmail.com,85.0,7.6,163.0,High Risk,"*   Your glucose level is within the normal range.
+*   Your haemoglobin level is low and requires medical review.
+*   Your cholesterol is healthy. Maintain a balanced diet and exercise. This is not a medical diagnosis."
+Ramu,23,harish12@gmail.com,112.0,12.4,160.0,Needs Attention,"*   Your glucose level is slightly elevated.
+*   Your haemoglobin level is within the typical range.
+*   Your cholesterol is healthy. Maintain a balanced lifestyle. This is not a medical diagnosis."
+Rahul Sharma,27,sharma12@gmail.com,92.0,15.2,168.0,Healthy,"*   Your glucose level is within a healthy range.
+*   Your haemoglobin level appears to be healthy.
+*   Your cholesterol is healthy; continue with a balanced lifestyle. This is not a medical diagnosis."
+Sneha,25,sneha@gmail.com,118.0,11.8,218.0,Needs Attention,"*   Your glucose level is elevated.
+*   Your haemoglobin level is slightly below the normal range.
+*   Your cholesterol is borderline high; consider dietary changes. This is not a medical diagnosis."
+sai,21,raj@gmail.com,110.0,11.2,120.0,Needs Attention,"*   Your glucose level is slightly elevated.
+*   Your haemoglobin level is a little low.
+*   Your cholesterol level is within a healthy range. Continue with a balanced diet and regular exercise. This is not a medical diagnosis."

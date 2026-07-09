@@ -1,0 +1,27 @@
+# Root dependencies
+node_modules/
+
+# Nested dependencies
+**/node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build
+dist/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
