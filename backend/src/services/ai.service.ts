@@ -10,9 +10,20 @@ CSV Records:
 ${JSON.stringify(rows)}
 `;
 
+  console.log("🚀 Sending request to Gemini...");
+
   const result = await model.generateContent(prompt);
 
-  const text = result.response.text().trim();
+  const text = result.response.text();
 
-  return JSON.parse(text);
+  console.log("========== GEMINI RESPONSE ==========");
+  console.log(text);
+  console.log("=====================================");
+
+  const clean = text
+    .replace(/```json/g, "")
+    .replace(/```/g, "")
+    .trim();
+
+  return JSON.parse(clean);
 }

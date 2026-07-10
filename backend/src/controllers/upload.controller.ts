@@ -27,12 +27,16 @@ export async function uploadController(
       records: crmRecords,
     });
 
-  } catch (error) {
-    console.error("Upload Controller Error:", error);
+  } catch (error: any) {
+  console.error("========== ERROR ==========");
+  console.error(error);
+  console.error(error?.message);
+  console.error(error?.stack);
+  console.error("===========================");
 
-    return res.status(500).json({
-      success: false,
-      message: "AI Processing Failed",
-    });
-  }
+  return res.status(500).json({
+    success: false,
+    message: error?.message || "AI Processing Failed",
+  });
+}
 }
