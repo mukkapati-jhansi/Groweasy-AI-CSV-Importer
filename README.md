@@ -2,78 +2,86 @@
 
 An AI-powered CSV Importer developed as part of the **GrowEasy Software Developer Internship Assignment**.
 
-The application intelligently extracts CRM lead information from CSV files with different column names and structures using **Google Gemini AI**.
+The application intelligently extracts CRM lead information from CSV files with different column names, layouts, and structures using **Google Gemini 2.5 Flash AI**.
 
 ---
 
-## Live Demo
+# Live Demo
 
-**Frontend (Vercel)**
+### Frontend (Vercel)
 
 https://groweasy-ai-csv-importer-gamma.vercel.app
 
-**Backend (Render)**
+### Backend API (Render)
 
 https://groweasy-ai-csv-importer-qrpk.onrender.com
 
 ---
 
-## GitHub Repository
+# GitHub Repository
 
 https://github.com/mukkapati-jhansi/Groweasy-AI-CSV-Importer
 
 ---
 
-## Features
+# Features
 
 - Drag & Drop CSV Upload
 - CSV File Picker
-- CSV Preview before Import
+- CSV Preview before AI Processing
 - AI-powered CRM Field Extraction
 - Intelligent Mapping of Different CSV Formats
 - Responsive UI
+- Search Functionality
+- CSV Export
 - Error Handling
 - Production Deployment
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Frontend
+## Frontend
+
 - Next.js
 - TypeScript
 - Tailwind CSS
 
-### Backend
+## Backend
+
 - Node.js
 - Express.js
 - Multer
-- CSV Parser
+- CSV Parse
 
-### AI
+## AI
+
 - Google Gemini 2.5 Flash
 
-### Deployment
+## Deployment
+
 - Vercel
 - Render
 
 ---
 
-## Project Structure
+# Project Structure
 
-```
+```text
 AI-powered CSV/
 │
 ├── frontend/
 ├── backend/
+├── sample-csv/
+├── screenshots/
 └── README.md
 ```
 
 ---
 
-## Installation
+# Installation
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/mukkapati-jhansi/Groweasy-AI-CSV-Importer.git
@@ -81,7 +89,7 @@ git clone https://github.com/mukkapati-jhansi/Groweasy-AI-CSV-Importer.git
 
 ---
 
-### Backend
+## Backend Setup
 
 ```bash
 cd backend
@@ -91,7 +99,7 @@ npm run dev
 
 ---
 
-### Frontend
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -101,54 +109,90 @@ npm run dev
 
 ---
 
-## Environment Variables
+# Environment Variables
 
-### Backend
+## Backend
 
-Create a `.env` file inside the backend folder.
+Create a `.env` file inside the **backend** folder.
+
+### Local Development
 
 ```env
 GEMINI_API_KEY=your_google_gemini_api_key
 FRONTEND_URL=http://localhost:3000
 ```
 
-### Frontend
+### Production (Render)
 
-Create a `.env.local` file inside the frontend folder.
+```env
+FRONTEND_URL=https://groweasy-ai-csv-importer-gamma.vercel.app
+```
+
+---
+
+## Frontend
+
+Create a `.env.local` file inside the **frontend** folder.
+
+### Local Development
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000
 ```
 
-For production, set `NEXT_PUBLIC_API_URL` to your deployed Render backend URL.
+### Production
+
+```env
+NEXT_PUBLIC_API_URL=https://groweasy-ai-csv-importer-qrpk.onrender.com
+```
 
 ---
 
-## Workflow
+# Application Workflow
 
-1. Upload a CSV file.
-2. Preview the uploaded data.
+1. Upload any valid CSV file.
+2. Preview uploaded records before processing.
 3. Click **Confirm Import**.
-4. The backend processes the CSV using Google Gemini AI.
-5. AI extracts CRM fields and returns structured JSON.
-6. The frontend displays the imported CRM records.
+4. Backend parses the CSV.
+5. Google Gemini AI intelligently maps CRM fields.
+6. Structured CRM records are returned.
+7. Display imported CRM records in a responsive table.
+8. Export processed CRM records as CSV.
 
 ---
 
-## Assignment Highlights
+# Assignment Highlights
 
-- Intelligent AI-based field mapping
+- AI-powered intelligent field mapping
 - Supports different CSV structures
-- Responsive interface
-- TypeScript-based codebase
+- Responsive user interface
+- TypeScript-based architecture
+- Clean folder structure
+- Error handling
 - Production deployment using Vercel and Render
 
 ---
 
-## Author
+# Future Improvements
+
+- Progress indicator during AI processing
+- Batch processing for large CSV files
+- Retry mechanism for failed AI requests
+- Virtualized tables for very large datasets
+- Unit tests
+- Docker support
+- Dark mode
+
+---
+
+# Author
 
 **Mukkapati Jhansi**
 
-B.Tech CSE (2026)
+B.Tech – Computer Science & Engineering (2026)
 
-GitHub: https://github.com/mukkapati-jhansi
+GitHub Profile:
+https://github.com/mukkapati-jhansi
+
+Project Repository:
+https://github.com/mukkapati-jhansi/Groweasy-AI-CSV-Importer
